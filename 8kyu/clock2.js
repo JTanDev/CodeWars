@@ -7,4 +7,10 @@ function past(h, m, s){
     let min = m*60000
     let hour = h*3600000
     return sec+min+hour
-  }
+}
+
+//Better
+
+function past(h, m, s){
+  return ((h*3600)+(m*60)+s)*1000
+}
